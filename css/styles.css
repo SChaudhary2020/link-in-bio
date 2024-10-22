@@ -1,55 +1,89 @@
-* {
-  border: 1px blue dashed;
-}
+/* * {
+  border: 1px red dashed;
+} */
 
 body {
   padding-top: 40px;
   padding-bottom: 40px;
   min-height: 100%;
-  color: rgba(255, 255, 255, 1.0);
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  background: linear-gradient(180deg, #1F005c,#5b0060, #870160, #ac255e, #ca485c, #F39060, #FFb56b );
+  box-sizing: border-box;
+  color: rgba(255, 255, 255, 1);
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  background: linear-gradient(
+    180deg,
+    #1f005c,
+    #5b0060,
+    #870160,
+    #ac255e,
+    #ca485c,
+    #f39060,
+    #ffb56b
+  );
+}
+.main-container {
+  max-width: 640px;
+  margin: auto;
+}
+.image-row {
+  width: 100px;
+  height: 100px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 1000px;
+  text-align: center;
+  display: block;
+  margin: auto;
+  object-fit: cover;
+}
+img {
+  overflow-clip-margin: content-box;
+  overflow: clip;
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.universe-img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 1000px;
+  font-size: 15px;
+  text-align: center;
+}
+.name-row {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 24px;
+  font-weight: 900;
+}
+.social-icons-row {
+  margin-bottom: 40px;
+  display: inline-block;
+  display: flex;
+  justify-content: space-around;
 }
 a {
-  color:rgba(255, 255, 255, 1.0);
+  color: rgba(255, 255, 255, 1);
   text-decoration: none;
+  display: flex;
+  margin: 0 5px;
+  justify-content: space-around;
 }
-/* .item {
+
+.item {
   background-color: rgba(149, 125, 175, 0.5);
+  margin-top: 15px;
   margin-bottom: 20px;
   display: flex;
   align-items: center;
   border-radius: 1000px;
   padding-top: 5px;
-  padding-right: 53px;
+  padding: 10px;
   box-shadow: 4px 4px 10px 0px rgba(122, 32, 122, 0.5);
-
 }
-.image-row {
-  width: 128px;
-  height: 128px;
-  object-fit: cover;
-  border-radius: 80px;
-}
-.main-container {
-  max-width: 40px;
+.link-text {
   margin: auto;
 }
-.image-row {
-  margin-bottom: 20px;
-  text-align: center;
-
-}
-.name-row {
-  margin-bottom: 40px;
-  text-align: center;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 24px;
-  font-weight: 900;
-
-}
-.social-icons-row {
-  margin-bottom: 30px;
-  display: flex;
-  justify-content: space-around;
-} */
